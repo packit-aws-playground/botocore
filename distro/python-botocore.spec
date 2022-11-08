@@ -38,7 +38,6 @@ botocore package is the foundation for the AWS CLI as well as boto3.
 
 %prep
 %autosetup -n %{pypi_name}-%{version} -p1
-rm -vr %{pypi_name}.egg-info
 # Remove online tests
 rm -vr tests/integration
 # This test tried to import tests/cmd-runner which failed as the code was
